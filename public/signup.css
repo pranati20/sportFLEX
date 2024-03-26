@@ -1,0 +1,129 @@
+/* login.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  /* background-image: url("FinalLogo.png");
+  background-repeat: no-repeat;
+  background-position: 100px -15%;  */
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center vertically as well */
+
+  /* position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%); */
+  background-color: #fff;
+  width: -webkit-fill-available;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 60px rgb(255, 0, 0);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #000000;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: calc(100% - 26px); /* Adjust for the padding and border */
+  padding: 13px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.submit-btn {
+  width: 100%; /* Full width */
+  padding: 15px;
+  border: none;
+  border-radius: 25px; /* Round corners */
+  background-color: #ff0000;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.submit-btn:hover {
+  background-color: #000000;
+}
+
+p {
+  margin-top: 20px;
+  text-align: center;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+a.signup-link {
+  color: #ff0000; /* Change the color to your desired color */
+}
+
+a.signup-link:hover {
+  color: #000000; /* Change the color on hover */
+}
+
+.signupMainClass {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+.signupcontainer1,
+.signupcontainer2 {
+  width: 50%;
+}
+
+.SUC2Box {
+  padding: 30px;
+}
+
+.signupcontainer1 img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+@media (width<=769px) {
+  .signupMainClass {
+    flex-direction: column;
+  }
+  .signupcontainer1,
+  .signupcontainer2 {
+    width: 100%;
+  }
+  .signupcontainer2 {
+    padding: 0px;
+  }
+  .SUC2Box {
+    padding: 15px;
+  }
+}

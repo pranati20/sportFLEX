@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Host Login</title>
+    <link rel="stylesheet" href="/login.css" />
+  </head>
+  <body>
+    <img src="FinalLogo.png" />
+
+    <div class="form-container">
+      <h2>HOST LOGIN</h2>
+
+      <form action="/hostLogin" method="post">
+        <div class="form-group">
+          <label for="name">NAME:</label>
+          <input
+            type="text"
+            id="name"
+            name="username"
+            placeholder="Enter your name"
+            required
+            autocomplete="off"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">PASSWORD:</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <button type="submit" class="submit-btn">Login</button>
+      </form>
+      <p>New host? <a href="/hostSignup" class="signup-link">Signup</a></p>
+    </div>
+  </body>
+</html>

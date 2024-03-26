@@ -1,0 +1,582 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  font-family: "Poppins", sans-serif;
+}
+.image-container {
+  width: 180px;
+  height: 180px;
+  /* padding: 20px;  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-container img {
+  width: 100%; /* Ensure the image fills the container */
+  height: 100%; /* Ensure the image fills the container */
+  border-radius: 50%; /* Makes the image round */
+  border: 6px solid red; /* Adds a red border */
+}
+p {
+  color: white;
+  font-size: 2.5em;
+  /* margin-left: 140px;
+  margin-top: 80px; */
+}
+h1 {
+  /* margin-left: 250px;
+  margin-top: -120px; */
+  color: red;
+  /* position: absolute; */
+}
+.left h1 {
+  color: red;
+  /* margin-left: 1100px;
+  margin-top: -398px;
+  position: absolute; */
+  font-size: 4em;
+}
+.left p {
+  /* margin-left: 900px;
+  margin-top: -250px;
+  position: absolute; */
+  font-size: 2em;
+}
+.sport img {
+  width: 200px;
+  /* margin-left: 1200px; */
+}
+.glowy-line {
+  width: 100%;
+  height: 400px;
+  background-color: red;
+  box-shadow: 0 0 10px 5px red;
+}
+
+.box1,
+.box2,
+.box3 {
+  width: 420px;
+  height: 600px;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  /* margin-right: 20px;
+  margin-top: 50px;
+  margin-left: 20px; */
+  display: flex;
+  align-items: center;
+}
+.box-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.box1 h1 {
+  color: rgb(255, 0, 0);
+  font-size: 4em;
+  /* margin-top: 10px;
+  margin-left: 120px; */
+  line-height: 60px;
+}
+
+.box1 p {
+  color: rgb(255, 255, 255);
+  font-size: 2.5em;
+  line-height: 40px;
+  /* margin-bottom: 100px; */
+}
+
+.box1 h3 {
+  color: #ff0101;
+  font-size: 1.5em;
+  /* margin-top: -30px;
+  margin-left: 120px; */
+}
+
+.box1 h1,
+.box1 p,
+.box1 h3 {
+  text-align: center;
+}
+
+.box2 h1 {
+  color: rgb(255, 0, 0);
+  font-size: 4em;
+  line-height: 60px;
+  text-align: center;
+  /* margin-top: 0.1em;
+  margin-left: 90px; */
+}
+
+.box2 p {
+  color: rgb(255, 255, 255);
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.box3 h1 {
+  color: rgb(255, 0, 0);
+  font-size: 4em;
+  margin-bottom: -0.4em;
+  margin-top: -4px;
+  margin-left: 80px;
+}
+
+.box3 h3 {
+  color: #ffffff;
+  font-size: 1.5em;
+  margin-top: 80px;
+  margin-left: 80px;
+}
+
+.box3 p {
+  color: rgb(255, 255, 255);
+  font-size: 2.5em;
+}
+.BCBox2Main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 60px;
+  gap: 30px;
+  position: relative;
+}
+
+.btn-8 {
+  margin-top: 20px;
+  text-decoration: none;
+  position: relative;
+  border: none;
+  font-size: 16px;
+  font-family: inherit;
+  cursor: pointer;
+  color: #fff;
+  width: 8.5em;
+  height: 3.5em;
+  line-height: 2em;
+  text-align: center;
+  background: #ffffff; /* White background by default */
+  border-radius: 30px;
+  z-index: 1;
+  transition: background 0.4s; /* Transition for background color */
+}
+
+.btn-8.selected {
+  background: #ff0000; /* Red background when selected */
+}
+
+.btn-8 span {
+  color: black; /* Ensure text color remains black */
+}
+
+#hydBtn {
+  position: relative;
+  right: -20px;
+}
+
+#chennaiBtn {
+  position: relative;
+  right: -22px;
+}
+#chennaiBtns {
+  position: relative;
+  right: -22px;
+  width: 200px;
+}
+#delBtn {
+  position: relative;
+  right: -30px;
+}
+
+#bgBtn {
+  position: relative;
+  left: 100px;
+}
+
+#mumbaiBtn {
+  position: relative;
+  left: 110px;
+}
+
+.ID {
+  color: rgb(255, 255, 255);
+  font-size: 1.5em;
+  /* margin-top: 20px;
+  margin-left: 20px; */
+}
+
+.wrapper {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sport-selection {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-top: 60px;
+  gap: 10px;
+}
+
+.sport-selection label {
+  width: 100%;
+}
+
+.join {
+  color: rgb(255, 255, 255);
+  font-size: 2em;
+  margin-top: 30px;
+  margin-left: -380px;
+}
+.selected {
+  background: #ffffff;
+  color: #000000; /* Change text color if needed */
+}
+/* Popup container */
+.popup-container {
+  display: none;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Popup content */
+.popup-content {
+  background-color: #000000; /* White background */
+  /* margin: 15% auto;  */
+  padding: 10px;
+  border: 1px solid #888;
+  width: 40%;
+  height: 400px; /* Set popup width */
+}
+
+/* Close button */
+.close {
+  color: #353232;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#qrcodeContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+.pop1 {
+  width: 1200px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.popup-content h2 {
+  color: #ff2121;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Input fields */
+.input-field {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  /* margin-left: 10px; */
+}
+
+/* Generate Team ID button */
+.generate-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #ff0000; /* Red background */
+  color: #fff; /* White text color */
+  cursor: pointer;
+}
+
+.generate-btn:hover {
+  background-color: #cc0000; /* Darker red on hover */
+}
+
+.generate-btn:focus {
+  outline: none;
+}
+
+.team-id {
+  color: red; /* Red color */
+}
+.highlighted {
+  border-color: #ff0000; /* Red border color */
+  box-shadow: 0 0 10px 5px #ff0000; /* Red glow effect */
+}
+.highlighted {
+  border-color: #ff0000; /* Red border color */
+  box-shadow: 0 0 10px 5px #ff0000; /* Red glow effect */
+}
+.position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style the label to look like a checkbox */
+/* Style the label to look like a checkbox */
+.sport-selection label {
+  position: relative;
+  /* padding-left: 35px; */
+  /* margin-bottom: 12px; */
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Hide the default checkbox */
+.sport-selection label input {
+  /* position: absolute; */
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.sport-selection label .checkmark {
+  /* position: absolute;
+  top: 4px;
+  left: 0; */
+  position: relative;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.sport-selection label .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.sport-selection label input:checked ~ .checkmark:after {
+  display: flex;
+}
+
+/* Style the checkmark/indicator */
+.sport-selection label .checkmark:after {
+  left: 8px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+/* Change background of checkbox when checked */
+.sport-selection label input:checked ~ .checkmark {
+  background-color: #f00;
+}
+/* .generate-btn {
+  margin-left: 10px;
+} */
+.button-custom {
+  background-color: #ff3333; /* Red background */
+  color: #fff; /* White text */
+  padding: 10px 20px; /* Padding around text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px;
+  cursor: pointer; /* Cursor style */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.button-custom:hover {
+  background-color: #cc0000; /* Darker red on hover */
+}
+.container-custom {
+  max-width: 400px;
+  /* margin: 100px auto; */
+  position: relative;
+  /* margin-top: 3px; */
+  /* margin-left: 20px; */
+}
+
+.input-container-custom {
+  position: relative;
+  /* margin-bottom: 20px; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-container-custom input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.input-container-custom input:focus {
+  outline: none;
+  border-color: #ff3333;
+  box-shadow: 0 0 5px #ff3333;
+}
+
+.label-custom {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #666;
+  transition: top 0.3s, font-size 0.3s;
+}
+
+.input-container-custom input:focus + .label-custom,
+.input-container-custom input:not(:placeholder-shown) + .label-custom {
+  /* top: -15px; */
+  font-size: 12px;
+  color: #ff3333;
+}
+
+.userstacksContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 60px;
+  padding-bottom: 0px;
+}
+
+.userstacksContainer1 {
+  width: 49%;
+  padding: 0px 50px;
+  padding-left: 0px;
+}
+
+.userstacksContainer2 {
+  width: 5px;
+}
+
+.userstacksContainer3 {
+  width: 49%;
+  padding: 0px 50px;
+  padding-right: 0px;
+}
+
+.username {
+  margin-top: 25px;
+}
+
+.sport {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media (width<1024px) {
+  .userstacksContainer {
+    flex-direction: column;
+  }
+
+  .userstacksContainer1 {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .username,
+  .xp {
+    width: 100%;
+  }
+  .username h1 {
+    text-align: center;
+  }
+  .xp p {
+    text-align: center;
+  }
+
+  .userstacksContainer2 {
+    width: 100%;
+    height: 3px;
+  }
+  .glowy-line {
+    width: 80vw;
+    height: 100%;
+  }
+  .userstacksContainer3 {
+    width: 100%;
+    padding: 30px;
+  }
+}
+
+/* @media (max-width: 1023px) {
+  .left h1 {
+    color: red;
+    font-size: 4em;
+  }
+}
+.left p {
+  font-size: 2em;
+}
+.container {
+  left: 20%;
+}
+@media (max-width: 1280px) {
+  .box1,
+  .box2,
+  .box3 {
+    width: 600px;
+    height: 550px;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+  }
+} */

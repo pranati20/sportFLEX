@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/home.css" />
+
+    <title>Home page</title>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+  </head>
+  <body>
+    <section class="userstacks">
+      <div class="userstacksContainer">
+        <div class="userstacksContainer1">
+          <div class="image-container">
+            <img src="../images/pfp.png" alt="profile pic" />
+          </div>
+          <div class="username">
+            <h1>USERNAME</h1>
+          </div>
+          <div class="xp">
+            <p>XP LEVEL:</p>
+            <p>RANK:</p>
+          </div>
+        </div>
+
+        <div class="userstacksContainer2">
+          <div class="glowy-line"></div>
+        </div>
+
+        <div class="userstacksContainer3">
+          <div class="left">
+            <h1>STATS</h1>
+            <p>
+              MATCHES PLAYED: <br />MATCHES WON:<br />COMPETITVE WIN: <br />
+              FAVOURITE SPORT:<br />MATCHES HOSTED:
+            </p>
+          </div>
+        </div>
+        <div class="sport">
+          <img src="../images/2.png" />
+        </div>
+      </div>
+    </section>
+
+    <!-- container -->
+    <div class="container">
+      <div class="box1">
+        <div class="box-container">
+          <h1>BOOK</h1>
+          <p>a venue</p>
+          <h3>Select a sport</h3>
+
+          <div class="sport-selection">
+            <label class="SSLables">
+              <input type="checkbox" name="sport" value="Cricket" />
+              <span class="checkmark"></span>
+              <span id="SSNames">Cricket</span>
+            </label>
+
+            <label class="SSLables">
+              <input type="checkbox" name="sport" value="Basketball" />
+              <span class="checkmark"></span>
+              <span id="SSNames">Basketball</span>
+            </label>
+            <label class="SSLables">
+              <input type="checkbox" name="sport" value="Football" />
+              <span class="checkmark"></span>
+              <span id="SSNames">Football</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="box2">
+        <div class="box-container">
+          <h1>TEAM UP</h1>
+          <p>with friends</p>
+          <div class="BCBox2Main">
+            <h2 class="ID">Create a match</h2>
+            <input
+              type="text"
+              id="teamName"
+              class="input-field"
+              placeholder="Enter team name"
+            />
+            <input
+              type="number"
+              id="numPlayers"
+              class="input-field"
+              placeholder="Enter number of players"
+            />
+
+            <!-- Button to generate team ID -->
+            <button id="generateTeamId" class="generate-btn">
+              Generate Team ID
+            </button>
+
+            <h2 class="ID">OR join a match</h2>
+
+            <div class="container-custom">
+              <div class="input-container-custom">
+                <input
+                  type="text"
+                  id="teamIdInput"
+                  placeholder="Enter Team ID"
+                  required
+                />
+                <button id="generateQRButton" class="generate-btn">
+                  Show Team QR
+                </button>
+              </div>
+            </div>
+            <div id="qrcodePopup" class="popup">
+              <div id="qrcodeContainer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box3">
+        <div class="box-container">
+          <div class="position">
+            <button id="seeNearbyVenues" class="button-custom">
+              See Nearby Venues
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Popup container -->
+      <!-- Update the popup content to include a container for the QR code -->
+      <div id="popupContainer" class="popup-container">
+        <!-- <div class="pop1"> -->
+        <div class="popup-content">
+          <span class="close">&times;</span>
+          <!-- Close button -->
+          <h2>Team ID</h2>
+          <p id="teamIdDisplay"></p>
+          <!-- Display team ID here -->
+          <div id="qrcode">
+            <span id="qrcodeContainer"> </span>
+          </div>
+          <!-- Container for the QR code -->
+        </div>
+        <!-- </div> -->
+      </div>
+    </div>
+    <script src="/homescript.js"></script>
+  </body>
+</html>

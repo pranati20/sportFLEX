@@ -1,0 +1,146 @@
+/* login.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Set height to 100% of viewport height */
+
+  overflow-y: auto; /* Enable vertical scroll */
+  background-color: #000000;
+}
+
+img {
+  position: absolute;
+  top: 0;
+  left: 6%; /* Adjust the left position as needed */
+  width: 40%; /* Adjust the width as needed */
+  z-index: -1; /* Ensure the image is behind other content */
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center vertically as well */
+  position: absolute;
+  top: 50%;
+  left: 70%; /* Changed left position */
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 80%; /* Changed width to make it more responsive */
+  max-width: 550px; /* Added max-width for better scaling */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 60px rgb(255, 0, 0);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 2em;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #000000;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%; /* Changed to full width */
+  padding: 13px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.submit-btn {
+  width: 100%; /* Full width */
+  padding: 15px;
+  border: none;
+  border-radius: 25px; /* Round corners */
+  background-color: #ff0000;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.submit-btn:hover {
+  background-color: #000000;
+}
+
+p {
+  margin-top: 20px;
+  text-align: center;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a.signup-link {
+  color: #ff0000; /* Change the color to your desired color */
+}
+
+a.signup-link:hover {
+  color: #000000; /* Change the color on hover */
+}
+
+a.host-signup-link {
+  color: #ff0000; /* Change the color to your desired color */
+}
+
+a.host-signup-link:hover {
+  color: #000000; /* Change the color on hover */
+}
+
+@media only screen and (width=1280px) {
+  img {
+    top: 10%;
+  }
+}
+
+@media (width<1280px) {
+  img {
+    width: 40%;
+  }
+}
+
+@media (width<1024px) {
+  img {
+    top: -10%;
+  }
+}
+
+@media (max-width: 1024px) {
+  img {
+    width: 38%;
+    left: 1%;
+    top: 15%;
+  }
+}
+
+@media (max-width: 579px) {
+  img {
+    top: -10%;
+    left: 30%;
+  }
+  .form-container {
+    top: 60%;
+    left: 50%;
+  }
+}
