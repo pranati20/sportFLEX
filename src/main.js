@@ -199,7 +199,7 @@ app.post("/hostSignup", async (req, res) => {
     await Host.create({ username, password: hashedPassword });
 
     // Redirect the host to the login page
-    res.redirect("/home");
+    res.redirect("/HostSport.ejs");
   } catch (error) {
     console.error("Error occurred during host signup:", error);
     res.status(500).send("An unexpected error occurred during host signup.");
@@ -219,7 +219,7 @@ app.post("/hostLogin", async (req, res) => {
     const isPasswordMatch = await bcrypt.compare(password, host.password);
     if (isPasswordMatch) {
       // Redirect the host to the home page or dashboard
-      res.redirect("/home");
+      res.redirect("/HostSport.ejs");
     } else {
       return res.send("Incorrect password");
     }
